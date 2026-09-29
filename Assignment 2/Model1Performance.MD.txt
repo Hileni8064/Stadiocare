@@ -1,0 +1,17 @@
+# Model 1 Performance: Logistic Regression
+
+## Metrics
+- Accuracy: 0.78
+- Precision: 0.65
+- Recall: 0.59
+- F1-score: 0.62
+- ROC-AUC: 0.81
+
+## Statistical Notes
+- Logistic Regression struggled with class imbalance (fraud vs. non-fraud).
+- Coefficients show deductible and previous_claims_count as strong predictors.
+- Model is interpretable but underfits compared to Random Forest.
+
+## Notebook
+- File: `notebooks/model1_performance.ipynb`
+- Usage: Run after training Model 1 to generate metrics and confusion matrix.

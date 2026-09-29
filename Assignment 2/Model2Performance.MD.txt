@@ -1,0 +1,17 @@
+# Model 2 Performance: Random Forest
+
+## Metrics
+- Accuracy: 0.89
+- Precision: 0.82
+- Recall: 0.77
+- F1-score: 0.79
+- ROC-AUC: 0.94
+
+## Statistical Notes
+- Random Forest handled class imbalance better.
+- Feature importance shows claim_amount, deductible, and tenure as top predictors.
+- Model generalizes well but is less interpretable.
+
+## Notebook
+- File: `notebooks/model2_performance.ipynb`
+- Usage: Run after training Model 2 to generate metrics, confusion matrix, and feature importance plot.

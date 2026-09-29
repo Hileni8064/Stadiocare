@@ -1,0 +1,17 @@
+# Model 1: Logistic Regression
+
+## Details
+- Technique: Logistic Regression (binary classification)
+- Hyperparameters:
+  - penalty = 'l2'
+  - solver = 'liblinear'
+  - C = 1.0
+  - random_state = 42
+
+## Why Logistic Regression?
+- Provides interpretable coefficients
+- Useful baseline for binary classification
+
+## Notebook
+- File: `notebooks/model1_logistic_regression.ipynb`
+- Usage: Run after preprocessing and feature engineering. Outputs accuracy, precision, recall, F1-score, confusion matrix.

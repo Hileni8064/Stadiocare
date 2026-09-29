@@ -1,0 +1,15 @@
+/project-root
+│── README.md
+│── requirements.txt
+│── data/
+│    └── FreeInsuranceClaims100M.csv   # or link to Hugging Face dataset
+│── notebooks/
+│    ├── preprocessing.ipynb
+│    ├── feature_engineering.ipynb
+│    ├── model1_logistic_regression.ipynb
+│    └── model2_random_forest.ipynb
+│── docs/
+│    ├── Preprocessing.MD
+│    ├── FeatureEngineering.MD
+│    ├── Model1.MD
+│    └── Model2.MD

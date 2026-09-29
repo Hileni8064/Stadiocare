@@ -1,0 +1,11 @@
+# Preprocessing Details
+
+## Techniques Applied
+- Train-test split (80/20, random_state=42 for reproducibility)
+- Handling missing values (imputation for numerical, mode replacement for categorical)
+- Encoding categorical variables (OneHotEncoder for nominal, LabelEncoder for binary)
+- Scaling numerical features (StandardScaler for Logistic Regression, not required for Random Forest)
+
+## Notebook
+- File: `notebooks/preprocessing.ipynb`
+- Usage: Run all cells to generate cleaned training and testing datasets.

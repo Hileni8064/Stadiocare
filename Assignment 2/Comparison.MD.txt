@@ -1,0 +1,14 @@
+# Comparison of Model 1 and Model 2
+
+## Summary
+- Logistic Regression: Accuracy = 0.78, ROC-AUC = 0.81
+- Random Forest: Accuracy = 0.89, ROC-AUC = 0.94
+
+## Key Insights
+- Random Forest significantly outperforms Logistic Regression across all metrics.
+- Logistic Regression remains useful for interpretability and baseline comparison.
+- Random Forest is recommended for deployment due to superior predictive power.
+
+## Notebook
+- File: `notebooks/comparison.ipynb`
+- Usage: Run to generate side-by-side metric tables and performance plots.

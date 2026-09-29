@@ -1,0 +1,10 @@
+# Feature Engineering Details
+
+## Techniques Applied
+- Derived features: claim-to-tenure ratio, previous_claims_count bucketization
+- Date features: extracting month and year from incident_date
+- Interaction terms: deductible × claim_amount
+
+## Notebook
+- File: `notebooks/feature_engineering.ipynb`
+- Usage: Run after preprocessing to enrich dataset with engineered features.
