@@ -49,6 +49,9 @@ https://drive.google.com/file/d/1Zc5IQrMvo4nfkXyiqcPaM32dCEdGKg3G/view?usp=drive
   - Notebook
   - README.md
   - Dataset (`/data/` folder)
+ 
+## Link to the video
+https://drive.google.com/file/d/1Zc5IQrMvo4nfkXyiqcPaM32dCEdGKg3G/view?usp=drive_link
 
 ---
 
