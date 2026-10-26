@@ -1,0 +1,14 @@
+git add SS3_PartB.ipynb README.md data/STADIOcare_data.csv
+git commit -m "Added dataset loading section with instance counts and class overview"
+
+git add SS3_PartB.ipynb
+git commit -m "Implemented preprocessing pipeline with stratified train/validation/test split and scaling"
+
+git add SS3_PartB.ipynb
+git commit -m "Trained Random Forest model with justified hyperparameters"
+
+git add SS3_PartB.ipynb
+git commit -m "Validated model on unseen data and reported metrics"
+
+git add SS3_PartB.ipynb
+git commit -m "Visualised results with confusion matrix heatmap"
