@@ -1,0 +1,19 @@
+git commit -m "Initial project setup"
+
+git commit -m "Added preprocessing pipeline"
+
+git commit -m "Implemented missing value handling"
+
+git commit -m "Added feature engineering features"
+
+git commit -m "Implemented one hot encoding"
+
+git commit -m "Added Random Forest regression model"
+
+git commit -m "Added XGBoost regression model"
+
+git commit -m "Updated model documentation"
+
+git commit -m "Fixed dataset paths"
+
+git commit -m "Final project submission"

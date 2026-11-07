@@ -1,0 +1,132 @@
+# Data Preprocessing
+
+## Purpose
+
+The purpose of preprocessing is to prepare the MIMIC-IV dataset for machine learning analysis by cleaning the data, handling missing values, and ensuring consistency before feature engineering and model development.
+
+The preprocessing stage improves data quality and creates a reliable dataset for Length of Stay prediction.
+
+--------------------------------------------------
+
+Input File
+
+data/raw/mimic_admissions.csv
+
+Output File
+
+data/processed/cleaned_data.csv
+
+--------------------------------------------------
+
+## Preprocessing Techniques
+
+### 1. Duplicate Removal
+
+Duplicate records are removed from the dataset using:
+
+df.drop_duplicates(inplace=True)
+
+This prevents repeated observations from biasing the machine learning models.
+
+--------------------------------------------------
+
+### 2. Missing Value Handling
+
+Missing numerical values are replaced using the median value.
+
+SimpleImputer(strategy="median")
+
+Missing categorical values are replaced using the most frequent category.
+
+SimpleImputer(strategy="most_frequent")
+
+This approach retains valuable observations and avoids unnecessary data loss.
+
+--------------------------------------------------
+
+### 3. Date Conversion
+
+Admission and discharge date variables are converted into datetime format.
+
+pd.to_datetime()
+
+Converting date columns allows time-based features to be created later during feature engineering.
+
+--------------------------------------------------
+
+### 4. Feature Scaling
+
+Numerical variables are standardised using:
+
+StandardScaler()
+
+Scaling ensures that variables are on a similar scale and improves model performance.
+
+--------------------------------------------------
+
+### 5. Data Validation
+
+The dataset is checked for:
+
+- Missing values
+- Invalid dates
+- Duplicate records
+- Incorrect data types
+
+This ensures that the cleaned dataset is suitable for the next stage of the workflow.
+
+--------------------------------------------------
+
+## Output
+
+The cleaned dataset is saved as:
+
+data/processed/cleaned_data.csv
+
+--------------------------------------------------
+
+## Related Script
+
+scripts/preprocessing.py
+
+--------------------------------------------------
+
+## How to Run
+
+Open a terminal and run:
+
+python scripts/preprocessing.py
+
+--------------------------------------------------
+
+## Workflow Position
+
+Raw Dataset
+
+↓
+
+preprocessing.py
+
+↓
+
+cleaned_data.csv
+
+↓
+
+feature_engineering.py
+
+--------------------------------------------------
+
+## Expected Outcome
+
+After preprocessing:
+
+✓ Missing values are handled
+
+✓ Duplicate records are removed
+
+✓ Date columns are correctly formatted
+
+✓ Numerical features are scaled
+
+✓ The dataset is ready for feature engineering

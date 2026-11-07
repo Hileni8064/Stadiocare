@@ -1,0 +1,72 @@
+# Feature Engineering
+
+## Purpose
+
+Feature engineering is used to create meaningful features from the cleaned dataset that improve model performance.
+
+Input File:
+data/processed/cleaned_data.csv
+
+Output File:
+data/processed/engineered_data.csv
+
+## Features Created
+
+1. Length of Stay
+
+The target variable is calculated using:
+
+length_of_stay = (dischtime - admittime).dt.days
+
+2. Admission Month
+
+admission_month = admittime.dt.month
+
+Purpose:
+Captures seasonal admission patterns.
+
+3. Day of Week
+
+day_of_week = admittime.dt.dayofweek
+
+Purpose:
+Captures weekly trends.
+
+4. Weekend Admission
+
+weekend_admission = (day_of_week >= 5)
+
+Purpose:
+Identifies weekend admissions.
+
+5. One-Hot Encoding
+
+The following categorical variables are converted using One-Hot Encoding:
+
+- admission_type
+- insurance
+- race
+
+pd.get_dummies()
+
+This prevents artificial ranking between categories.
+
+## Important
+
+The engineered dataset is saved as:
+
+data/processed/engineered_data.csv
+
+Both machine learning models use this dataset directly.
+
+## Related Script
+
+scripts/feature_engineering.py
+
+## How to Run
+
+python scripts/feature_engineering.py
+
+## Output
+
+data/processed/engineered_data.csv

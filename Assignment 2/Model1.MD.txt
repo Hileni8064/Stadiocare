@@ -1,0 +1,51 @@
+# Model 1 - Random Forest Regression
+
+## Purpose
+
+Random Forest Regression is used to predict patient Length of Stay (LOS).
+
+The model assists hospital management with capacity planning, bed allocation and workforce planning.
+
+Dataset Used:
+data/processed/engineered_data.csv
+
+## Technique
+
+Random Forest Regression
+
+Random Forest combines multiple decision trees to improve prediction accuracy and reduce overfitting.
+
+## Hyperparameters
+
+n_estimators = 200
+
+max_depth = 15
+
+min_samples_split = 5
+
+random_state = 42
+
+## Why Random Forest?
+
+- Handles non-linear relationships
+- Performs well with healthcare data
+- Reduces overfitting
+- Provides feature importance information
+
+## Evaluation Metrics
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+## Related Script
+
+scripts/train_random_forest.py
+
+## How to Run
+
+python scripts/train_random_forest.py
+
+## Output
+
+models/random_forest_model.pkl

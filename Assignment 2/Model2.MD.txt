@@ -1,0 +1,57 @@
+# Model 2 - XGBoost Regression
+
+## Purpose
+
+XGBoost Regression is used as an alternative model for Length of Stay prediction.
+
+The model is compared against Random Forest Regression to determine which algorithm provides better predictive performance.
+
+Dataset Used:
+data/processed/engineered_data.csv
+
+## Technique
+
+XGBoost Regression
+
+XGBoost is a gradient boosting algorithm that sequentially builds decision trees to minimise prediction errors.
+
+## Hyperparameters
+
+n_estimators = 300
+
+learning_rate = 0.05
+
+max_depth = 6
+
+random_state = 42
+
+## Why XGBoost?
+
+- High predictive accuracy
+- Handles complex relationships
+- Includes regularisation to prevent overfitting
+- Performs well on structured healthcare data
+
+## Evaluation Metrics
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+## Related Script
+
+scripts/train_xgboost.py
+
+## How to Run
+
+python scripts/train_xgboost.py
+
+## Output
+
+models/xgboost_model.pkl
+
+## Model Comparison
+
+Both models are trained using the same engineered dataset and evaluated using MAE, RMSE and R² Score.
+
+The model with the lowest MAE and RMSE and the highest R² Score will be considered the better predictor of Length of Stay.

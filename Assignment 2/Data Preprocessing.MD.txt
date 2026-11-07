@@ -1,0 +1,61 @@
+# Data Preprocessing
+
+## Purpose
+
+The purpose of preprocessing is to prepare the MIMIC-IV dataset for machine learning analysis. This involves cleaning the data, handling missing values and ensuring that the dataset is suitable for model training.
+
+Input File:
+data/raw/mimic_admissions.csv
+
+Output File:
+data/processed/cleaned_data.csv
+
+## Preprocessing Techniques
+
+1. Duplicate Removal
+
+Duplicate records are removed using:
+
+df.drop_duplicates(inplace=True)
+
+This prevents repeated observations from affecting model performance.
+
+2. Missing Value Handling
+
+Numerical variables are imputed using the median value.
+
+SimpleImputer(strategy="median")
+
+Categorical variables are imputed using the most frequent value.
+
+SimpleImputer(strategy="most_frequent")
+
+This prevents unnecessary loss of data.
+
+3. Date Conversion
+
+Date columns are converted into datetime format.
+
+pd.to_datetime()
+
+This allows time-based feature extraction.
+
+4. Feature Scaling
+
+Numerical variables are standardised using:
+
+StandardScaler()
+
+This improves model performance.
+
+## Related Script
+
+scripts/preprocessing.py
+
+## How to Run
+
+python scripts/preprocessing.py
+
+## Output
+
+data/processed/cleaned_data.csv

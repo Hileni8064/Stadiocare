@@ -1,0 +1,80 @@
+# Model 2 Performance
+
+## Model
+
+XGBoost Regression
+
+--------------------------------------------------
+
+## Purpose
+
+The purpose of Model 2 is to predict patient Length of Stay using gradient boosting techniques.
+
+The model was developed to improve prediction accuracy by capturing complex relationships within healthcare admission data.
+
+--------------------------------------------------
+
+## Dataset Used
+
+data/processed/engineered_data.csv
+
+--------------------------------------------------
+
+## Related Python File
+
+scripts/model2_performance.py
+
+--------------------------------------------------
+
+## How to Run
+
+python scripts/model2_performance.py
+
+--------------------------------------------------
+
+## Statistical Measures
+
+The following evaluation metrics were used:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+--------------------------------------------------
+
+## Results
+
+MAE
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+RMSE
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+R² Score
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+## Interpretation
+
+MAE measures the average prediction error between predicted and actual Length of Stay values.
+
+RMSE measures the size of prediction errors while penalising larger errors more heavily.
+
+R² indicates how much variation in patient Length of Stay is explained by the model.
+
+--------------------------------------------------
+
+## Conclusion
+
+The XGBoost Regression model produced Length of Stay predictions using engineered healthcare features and was evaluated using standard regression metrics.

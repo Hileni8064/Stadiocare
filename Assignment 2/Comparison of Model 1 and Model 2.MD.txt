@@ -1,0 +1,95 @@
+# Comparison of Model 1 and Model 2
+
+## Objective
+
+The purpose of this comparison is to identify which machine learning model provides the most accurate prediction of patient Length of Stay.
+
+--------------------------------------------------
+
+## Models Compared
+
+Model 1
+
+Random Forest Regression
+
+--------------------------------------------------
+
+Model 2
+
+XGBoost Regression
+
+--------------------------------------------------
+
+## Related Python File
+
+scripts/model_comparison.py
+
+--------------------------------------------------
+
+## How to Run
+
+python scripts/model_comparison.py
+
+--------------------------------------------------
+
+## Evaluation Metrics
+
+The models were compared using:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+--------------------------------------------------
+
+## Results Summary
+
+Random Forest Regression
+
+MAE:
+[ENTER ACTUAL RESULT]
+
+RMSE:
+[ENTER ACTUAL RESULT]
+
+R²:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+XGBoost Regression
+
+MAE:
+[ENTER ACTUAL RESULT]
+
+RMSE:
+[ENTER ACTUAL RESULT]
+
+R²:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+## Statistical Comparison
+
+The model with the lowest MAE produces smaller average prediction errors.
+
+The model with the lowest RMSE produces fewer large prediction errors.
+
+The model with the highest R² explains more variation in Length of Stay.
+
+--------------------------------------------------
+
+## Best Performing Model
+
+[ENTER MODEL NAME]
+
+--------------------------------------------------
+
+## Conclusion
+
+Both models demonstrated the ability to predict patient Length of Stay.
+
+The best performing model achieved the lowest MAE, lowest RMSE and highest R² score.
+
+This model is recommended for future hospital capacity planning and resource allocation tasks.

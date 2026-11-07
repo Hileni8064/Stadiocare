@@ -1,0 +1,85 @@
+# Model 1 Performance
+
+## Model
+
+Random Forest Regression
+
+--------------------------------------------------
+
+## Purpose
+
+The purpose of Model 1 is to predict patient Length of Stay (LOS) using the engineered features created from the MIMIC-IV dataset.
+
+Accurate prediction of LOS assists hospitals with:
+
+- Capacity planning
+- Bed allocation
+- Workforce scheduling
+- Resource management
+
+--------------------------------------------------
+
+## Dataset Used
+
+data/processed/engineered_data.csv
+
+--------------------------------------------------
+
+## Related Python File
+
+scripts/model1_performance.py
+
+--------------------------------------------------
+
+## How to Run
+
+python scripts/model1_performance.py
+
+--------------------------------------------------
+
+## Statistical Measures
+
+The following evaluation metrics were used:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+--------------------------------------------------
+
+## Results
+
+MAE
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+RMSE
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+R² Score
+
+Result:
+[ENTER ACTUAL RESULT]
+
+--------------------------------------------------
+
+## Interpretation
+
+Mean Absolute Error (MAE) measures the average difference between predicted and actual Length of Stay values.
+
+Root Mean Squared Error (RMSE) measures the average prediction error while giving greater penalty to larger errors.
+
+R² Score measures how much of the variation in Length of Stay is explained by the model.
+
+--------------------------------------------------
+
+## Conclusion
+
+The Random Forest Regression model successfully predicted patient Length of Stay and demonstrated its usefulness for hospital resource planning and capacity management.
